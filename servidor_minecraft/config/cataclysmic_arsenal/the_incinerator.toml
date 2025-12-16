@@ -1,0 +1,96 @@
+
+["The Incinerator - Innate Skill -/- Server"]
+	#Determines the animation for executing the 'Inner Flame' skill desired by the user. This is a reflection interface.
+	# If you enter an invalid address, this may cause an exception. Keep this in mind. I'll also leave a list of animations below for quick use.
+	#Default: net.sleys.cataclysmicarsenal.animations.CAAnimations.INNER_FLAME
+	#List of animations you may want to use for this skill...Weapons Of Miracle - Solar: reascer.wom.gameasset.WOMAnimations.SOLAR_BRASERO_INFIERNO
+	#Weapons Of Miracle - Solar: reascer.wom.gameasset.WOMAnimations.SOLAR_BRASERO_OBSCURIDAD
+	#
+	registerExecutionSkillAnimation = "net.sleys.cataclysmicarsenal.animations.CAAnimations.INNER_FLAME"
+	#Determines the entry time of the previous animation, this is handled under a 0.0F notation,
+	# the data that you provide here will be divided by 100 as long as they are different from 0
+	#Range: 0 ~ 10000
+	registerExecutionSkillAnimationTime = 0
+	#Determines the time at which the flag changes will be injected, that is, when the ability will be truly active,
+	#use these values ​​to synchronize the desired activation moment with the previous animation.
+	#Range: 0 ~ 500
+	registerExecutionSkillFlagTime = 50
+
+["The Incinerator - Passive -/- Client"]
+	#Disable the particles that are generated on the weapon blade, when it has the The Incinerator category, this disables it for ALL
+	disableWeaponBladeParticles = false
+	#Amount of particles that will be generated on the weapon blade passively
+	#Range: 0.1 ~ 2.0
+	incineratorBladeParticleCount = 0.2
+	#Amount of particles that will be generated on the weapon blade passively (Method/Dependency Epic Fight - POTB)
+	#Range: 0.1 ~ 2.0
+	incineratorBladeParticlePOTBCount = 0.4
+	#Disables thematic particles while swimming if you have full Ignitium armor and have a The Incinerator weapon in hand.
+	disableSwimParticles = false
+	#Disables thematic particles while running if you have full Ignitium armor and have a The Incinerator weapon in hand.
+	disableRunParticles = false
+
+["The Incinerator - Passive -/- Server"]
+	#Determines the synchronization attempts per instance, odd values ​​belong to the server and even values ​​to the client, so always use even numbers
+	#Range: 4 ~ 20
+	setIncineratorSyncWeight = 4
+	#Cooldown between each executable boost when gliding with the Ignitium ElytraChestplate.
+	#Range: 10 ~ 10000
+	setElytraChestplateCooldown = 80
+	#Maximum cooldown once the Ignitium ElytraChestplate jumps are recovered upon touching the ground after consuming a jump,
+	#this is the maximum cooldown, the rest of the cooldowns will be executed in mathematical proportion to this one.
+	#Range: 2000 ~ 10000
+	setElytraChestplateRecoveryCooldown = 3200
+	#Cooldown when using the Ignitium helmet ability
+	#Range: 500 ~ 10000
+	setHelmetCooldown = 1000
+	#The Incinerator weapon ability cooldown
+	#Range: 500 ~ 10000
+	setIncinerateCooldown = 1350
+	#Determines the animation for executing the 'Champion of The Flame: Incinerate' skill desired by the user. This is a reflection interface.
+	# If you enter an invalid address, this may cause an exception. Keep this in mind. I'll also leave a list of animations below for quick use.
+	#Default: net.sleys.cataclysmicarsenal.animations.CAAnimations.INCINERATE
+	registerExecutionIncinerateAnimation = "net.sleys.cataclysmicarsenal.animations.CAAnimations.INCINERATE"
+	#Determines the entry time of the previous animation, this is handled under a 0.0F notation,
+	# the data that you provide here will be divided by 100 as long as they are different from 0
+	#Range: 0 ~ 10000
+	registerExecutionIncinerateAnimationTime = 0
+	#Determines the time in which the skill will actually be executed
+	#Range: 0 ~ 10000
+	registerExecutionIncinerateFlagTime = 13
+
+["The Incinerator - Passive -/- Render"]
+	#Determines what type of rendering you want to indicate the temperature and its level in the Epic Fight HUB
+	#Options: GIF, PNG or NULL; Any added parameter that escapes these values will be taken as NULL.
+	setRenderHeatType = "GIF"
+	#Determines the position in Y where the Temperature indicator will be visually rendered
+	#Range: > -2147483648
+	setPosYHeat = -12
+	#Determines the position in X where the Temperature indicator will be visually rendered
+	#Range: > -2147483648
+	setPosXHeat = 0
+	#Determine the position in Y where the indicator is visually rendered as a percentage of the Temperature
+	#Range: > -2147483648
+	setPosYHeatText = 13
+	#Determine the position in X where the indicator is visually rendered as a percentage of the Temperature
+	#Range: > -2147483648
+	setPosXHeatText = 13
+	#Determine the Y position where the indicator that Ignis Orbs have been cast is visually rendered
+	#Range: > -2147483648
+	setPosYOrbs = -37
+	#Determine the X position where the indicator that Ignis Orbs have been cast is visually rendered
+	#Range: > -2147483648
+	setPosXOrbs = 0
+	#Determines at what Y position the representative icon for the Ignitium Elytra Chestplate will be rendered.
+	#Range: > -2147483648
+	setPosYImpulse = -37
+	#Determines at what X position the representative icon for the Ignitium Elytra Chestplate will be rendered..
+	#Range: > -2147483648
+	setPosXImpulse = 31
+	#Determines at what position of Y the amount of boosts for the Ignitium Elytra Chestplate available to the player will be rendered.
+	#Range: > -2147483648
+	setPosYImpulseText = -28
+	#Determines at what position of X the amount of boosts for the Ignitium Elytra Chestplate available to the player will be rendered.
+	#Range: > -2147483648
+	setPosXImpulseText = 40
+

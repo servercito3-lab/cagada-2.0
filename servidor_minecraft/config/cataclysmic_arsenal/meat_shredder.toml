@@ -1,0 +1,8 @@
+
+["Meat Shredder - Passive -/- Client"]
+	#Disable the particles that are generated on the weapon blade, when it has the The Meat Shredder category, this disables it for ALL
+	disableWeaponBladeParticles = false
+	#Amount of particles that will be generated on the weapon blade passively
+	#Range: 0.1 ~ 2.0
+	meatShredderBladeParticleCount = 0.1
+

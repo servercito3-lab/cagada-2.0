@@ -1,0 +1,67 @@
+
+["Astrape - Passive -/- Camera"]
+	#Allows you to execute camera movement for the Eikon Skill.
+	isAllowCamaraEventEikon = true
+	#Allows you to move the camera when casting the Eikon ability even if other mods are controlling the third-person camera.
+	#False = Conditional. The camera will be enabled or disabled based on your ModList, if it contains any mod that controls the third-person camera.
+	#True = Absolute. The previous concept is ignored, the camera will always move
+	cameraEventEikonType = false
+
+["Astrape - Passive -/- Server"]
+	#Determines the synchronization attempts per instance, odd values ​​belong to the server and even values ​​to the client, so always use even numbers
+	#Range: 4 ~ 20
+	setAstrapeSyncWeight = 4
+
+["Astrape - Passive -/- Client"]
+	#Disable the particles that are generated on the weapon blade, when it has the Astrape category and the next attack its empowered, this disables it for ALL
+	disableOverloadWeaponBladeParticles = false
+	#Disable the particles that are generated on the legs of user, when it has the Astrape category and the player its imbue (Tachý), this disables it for ALL
+	disableTachyWeaponBladeParticles = false
+	#Disable the particles that are generated on the weapon blade, when it has the Astrape category and the weapon its imbued (Dýna), this disables it for ALL
+	disableDynaWeaponBladeParticles = false
+	#Disables thematic particles while swimming if you have a Astrape weapon in hand.
+	disableSwimParticles = false
+	#Disables thematic particles while running if you have a Astrape weapon in hand.
+	disableRunParticles = false
+
+["Astrape - Passive -/- Render"]
+	#Determines what type of rendering you want to indicate the charge and its level in the Epic Fight HUB
+	#Options: GIF, PNG or NULL; Any added parameter that escapes these values will be taken as NULL.
+	setRenderChargeType = "GIF"
+	#Determines the position in Y where the Charge indicator will be visually rendered
+	#Range: > -2147483648
+	setPosYCharge = -12
+	#Determines the position in X where the Charge indicator will be visually rendered
+	#Range: > -2147483648
+	setPosXCharge = 0
+	#Determine the position in Y where the indicator is visually rendered as a percentage of the Charge
+	#Range: > -2147483648
+	setPosYChargeText = 13
+	#Determine the position in X where the indicator is visually rendered as a percentage of the Charge
+	#Range: > -2147483648
+	setPosXChargeText = 13
+	#Determines the Y position where the Dynamo passive icon will be rendered.
+	#Range: > -2147483648
+	setPosYEngine = -49
+	#Determines the X position where the Dynamo passive icon will be rendered.
+	#Range: > -2147483648
+	setPosXEngine = 0
+	#Determines the Y position where the Dynamo passive percentage will be rendered.
+	#Range: > -2147483648
+	setPosYEngineText = -22
+	#Determines the X position where the Dynamo passive percentage will be rendered.
+	#Range: > -2147483648
+	setPosXEngineText = 13
+	#Determines at what Y position the representative icon for the Internal Astrape Skill Chestplate will be rendered.
+	#Range: > -2147483648
+	setPosYSkillType = -47
+	#Determines at what X position the representative icon for the Internal Astrape Skill will be rendered..
+	#Range: > -2147483648
+	setPosXSkillType = 31
+	#Determines at what position of Y the skill type.
+	#Range: > -2147483648
+	setPosYSkillTypeText = -22
+	#Determines at what position of X the skill type.
+	#Range: > -2147483648
+	setPosXSkillTypeText = 44
+

@@ -1,0 +1,55 @@
+
+["Soul Render Category - Passive  -/- Server"]
+	#Cooldown when using the Cursium Chestplate ability
+	#Range: 2000 ~ 10000
+	setChestplateCooldown = 2720
+
+["Soul Render Category - Passive  -/- Client"]
+	#Disable the particles that are generated on the weapon blade, when it has the Soul Render category, this disables it for ALL
+	disableWeaponBladeParticles = false
+	#Amount of particles that will be generated on the weapon blade passively
+	#Range: 0.1 ~ 2.0
+	soulRenderBladeParticleCount = 0.4
+	#Disables thematic particles while swimming if you have full Cursium armor and have a Soul Render weapon in hand.
+	disableSwimParticles = false
+	#Disables thematic particles while running if you have full Cursium armor and have a Soul Render weapon in hand.
+	disableRunParticles = false
+
+["Soul Render Category - Passive  -/- Render"]
+	#Determines the Y position where the Hel's Grasp passive icon will be rendered.
+	#Range: > -2147483648
+	setPosYHelsGrasp = -12
+	#Determines the X position where the Hel's Grasp passive icon will be rendered.
+	#Range: > -2147483648
+	setPosXHelsGrasp = 0
+	#Determines the Y position where the percentage of the Hel's Grasp passive will be rendered.
+	#Range: > -2147483648
+	setPosYHelsGraspText = 13
+	#Determines the X position where the percentage of the Hel's Grasp passive will be rendered.
+	#Range: > -2147483648
+	setPosXHelsGraspText = 13
+	#Determines the Y position where the Spiritual Remnant passive icon will be rendered.
+	#Range: > -2147483648
+	setPosYSpiritualRemnant = -49
+	#Determines the Y position where the Spiritual Remnant passive icon will be rendered.
+	#Range: > -2147483648
+	setPosXSpiritualRemnant = 0
+	#Determines the Y position where the Spiritual Remnant passive percentage will be rendered.
+	#Range: > -2147483648
+	setPosYSpiritualRemnantText = -22
+	#Determines the X position where the Spiritual Remnant passive percentage will be rendered.
+	#Range: > -2147483648
+	setPosXSpiritualRemnantText = 13
+	#Determines the Y position where the Wraithfury active icon will be rendered
+	#Range: > -2147483648
+	setPosYWraithfury = -49
+	#Determines the X position where the Wraithfury active icon will be rendered
+	#Range: > -2147483648
+	setPosXWraithfury = 31
+	#Determines the Y position where the remaining time of the Wraithfury active will be rendered.
+	#Range: > -2147483648
+	setPosYWraithfuryText = -22
+	#Determines the X position where the remaining time of the Wraithfury active will be rendered.
+	#Range: > -2147483648
+	setPosXWraithfuryText = 45
+

@@ -1,0 +1,12 @@
+
+["Cataclysmic Arsenal"]
+	#Enables unfocused data synchronization between the server and client when a passive expires.
+	#When a passive expires, a focused sync is applied to all data and resets to its default value for
+	#the server and then the client. Afterward, it is removed on the server side, and an unfocused sync is
+	#applied to clean up any client data that doesn't match the server's.
+	#This can cause problems if another mod manages your tags or data without synchronizing for some reason.
+	#Disabling this option can resolve those issues and will have no effect on this mod.
+	#Simply, the entity that ran the passive will have several unusable tags and data, but due to the default settings,
+	# they won't cause any problems beyond consuming a little more memory.
+	allowUnFocalTagSync = true
+
