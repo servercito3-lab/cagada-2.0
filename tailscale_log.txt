@@ -1,0 +1,86 @@
+2025/12/16 20:41:11 logtail started
+2025/12/16 20:41:11 Program starting: v1.80.2-t62b8bf6a0-g3c35ee987, Go 1.23.5: []string{"./tailscaled"}
+2025/12/16 20:41:11 LogID: bc17e3f502d238bbeeda956150f7fb92f0009c45b22edd33d1cdbbc8c90f0db3
+2025/12/16 20:41:11 logpolicy: using system state directory "/var/lib/tailscale"
+logpolicy.ConfigFromFile /var/lib/tailscale/tailscaled.log.conf: open /var/lib/tailscale/tailscaled.log.conf: no such file or directory
+logpolicy.Config.Validate for /var/lib/tailscale/tailscaled.log.conf: config is nil
+2025/12/16 20:41:11 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2025/12/16 20:41:11 dns: [rc=resolved resolved=not-in-use ret=direct]
+2025/12/16 20:41:11 dns: using "direct" mode
+2025/12/16 20:41:11 dns: using *dns.directManager
+2025/12/16 20:41:11 dns: inotify addwatch: context canceled
+2025/12/16 20:41:11 wgengine.NewUserspaceEngine(tun "tailscale0") ...
+2025/12/16 20:41:11 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2025/12/16 20:41:11 dns: [rc=resolved resolved=not-in-use ret=direct]
+2025/12/16 20:41:11 dns: using "direct" mode
+2025/12/16 20:41:11 dns: using *dns.directManager
+2025/12/16 20:41:11 link state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.46/16 llu6]} v4=true v6=false}
+2025/12/16 20:41:11 onPortUpdate(port=44676, network=udp6)
+2025/12/16 20:41:11 router: using firewall mode pref 
+2025/12/16 20:41:11 router: default choosing iptables
+2025/12/16 20:41:11 router: netfilter running in iptables mode v6 = true, v6filter = true, v6nat = true
+2025/12/16 20:41:11 onPortUpdate(port=43844, network=udp4)
+2025/12/16 20:41:11 magicsock: disco key = d:c7fdecbb8fe42f9a
+2025/12/16 20:41:11 Creating WireGuard device...
+2025/12/16 20:41:11 Bringing WireGuard device up...
+2025/12/16 20:41:11 Bringing router up...
+2025/12/16 20:41:11 external route: up
+2025/12/16 20:41:11 Clearing router settings...
+2025/12/16 20:41:11 Starting network monitor...
+2025/12/16 20:41:11 Engine created.
+2025/12/16 20:41:11 pm: migrating "_daemon" profile to new format
+2025/12/16 20:41:11 logpolicy: using system state directory "/var/lib/tailscale"
+2025/12/16 20:41:11 monitor: [unexpected] network state changed, but stringification didn't: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.46/16 llu6]} v4=true v6=false}
+2025/12/16 20:41:11 monitor: [unexpected] old: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.1.46/16","fe80::7e1e:52ff:fee0:d562/64"],"lo":["127.0.0.1/8","::1/128"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkK12LLC","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"fB5S4NVi","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2025/12/16 20:41:11 monitor: [unexpected] new: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.1.46/16","fe80::7e1e:52ff:fee0:d562/64"],"lo":["127.0.0.1/8","::1/128"],"tailscale0":["fe80::9d84:a12b:c069:f3ab/64"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkK12LLC","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"fB5S4NVi","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""},"tailscale0":{"Index":4,"MTU":1280,"Name":"tailscale0","HardwareAddr":null,"Flags":57,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2025/12/16 20:41:11 LinkChange: major, rebinding. New state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.46/16 llu6]} v4=true v6=false}
+2025/12/16 20:41:11 onPortUpdate(port=44676, network=udp6)
+2025/12/16 20:41:11 onPortUpdate(port=43844, network=udp4)
+2025/12/16 20:41:11 got LocalBackend in 35ms
+2025/12/16 20:41:11 Start
+2025/12/16 20:41:11 Rebind; defIf="eth0", ips=[10.0.1.46/16 fe80::7e1e:52ff:fee0:d562/64]
+2025/12/16 20:41:11 magicsock: 0 active derp conns
+2025/12/16 20:41:11 monitor: gateway and self IP changed: gw=10.0.0.1 self=10.0.1.46
+2025/12/16 20:41:11 Backend: logs: be:bc17e3f502d238bbeeda956150f7fb92f0009c45b22edd33d1cdbbc8c90f0db3 fe:
+2025/12/16 20:41:11 Switching ipn state NoState -> NeedsLogin (WantRunning=false, nm=false)
+2025/12/16 20:41:11 blockEngineUpdates(true)
+2025/12/16 20:41:11 health(warnable=wantrunning-false): error: Tailscale is stopped.
+2025/12/16 20:41:11 wgengine: Reconfig: configuring userspace WireGuard config (with 0/0 peers)
+2025/12/16 20:41:11 wgengine: Reconfig: configuring router
+2025/12/16 20:41:11 wgengine: Reconfig: configuring DNS
+2025/12/16 20:41:11 dns: Set: {DefaultResolvers:[] Routes:{} SearchDomains:[] Hosts:0}
+2025/12/16 20:41:11 dns: Resolvercfg: {Routes:{} Hosts:0 LocalDomains:[], cloud="azure"}
+2025/12/16 20:41:11 dns: OScfg: {}
+2025/12/16 20:41:11 Start
+2025/12/16 20:41:11 generating new machine key
+2025/12/16 20:41:11 machine key written to store
+2025/12/16 20:41:11 Backend: logs: be:bc17e3f502d238bbeeda956150f7fb92f0009c45b22edd33d1cdbbc8c90f0db3 fe:
+2025/12/16 20:41:11 Switching ipn state NoState -> NeedsLogin (WantRunning=true, nm=false)
+2025/12/16 20:41:11 health(warnable=wantrunning-false): ok
+2025/12/16 20:41:11 blockEngineUpdates(true)
+2025/12/16 20:41:11 control: client.Shutdown ...
+2025/12/16 20:41:11 control: mapRoutine: exiting
+2025/12/16 20:41:11 health(warnable=warming-up): error: Tailscale is starting. Please wait.
+2025/12/16 20:41:11 control: authRoutine: exiting
+2025/12/16 20:41:11 control: updateRoutine: exiting
+2025/12/16 20:41:11 control: Client.Shutdown done.
+2025/12/16 20:41:11 StartLoginInteractiveAs("root"): url=false
+2025/12/16 20:41:11 control: client.Login(2)
+2025/12/16 20:41:11 control: LoginInteractive -> regen=true
+2025/12/16 20:41:11 control: doLogin(regen=true, hasUrl=false)
+2025/12/16 20:41:12 control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]
+2025/12/16 20:41:12 control: Generating a new nodekey.
+2025/12/16 20:41:12 control: RegisterReq: onode= node=[b4kpG] fup=false nks=false
+2025/12/16 20:41:12 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=false; authURL=true
+2025/12/16 20:41:12 control: AuthURL is https://login.tailscale.com/a/9ce47ad019fb3
+2025/12/16 20:41:12 control: doLogin(regen=false, hasUrl=true)
+2025/12/16 20:41:12 control: RegisterReq: onode= node=[b4kpG] fup=true nks=false
+2025/12/16 20:41:12 Received auth URL: https://login.tailsc...
+2025/12/16 20:41:12 popBrowserAuthNow("root"): url=true, key-expired=false, seamless-key-renewal=false
+2025/12/16 20:41:12 blockEngineUpdates(true)
+2025/12/16 20:41:12 stopEngineAndWait...
+2025/12/16 20:41:12 requestEngineStatusAndWait
+2025/12/16 20:41:12 requestEngineStatusAndWait: waiting...
+2025/12/16 20:41:12 requestEngineStatusAndWait: got status update.
+2025/12/16 20:41:12 stopEngineAndWait: done.
+2025/12/16 20:41:16 health(warnable=warming-up): ok
